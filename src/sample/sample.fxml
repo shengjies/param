@@ -38,7 +38,7 @@
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="529.0">
                                  <children>
                                     <Label layoutX="26.0" layoutY="30.0" text="硬件编码" />
-                                    <TextField fx:id="code" layoutX="96.0" layoutY="26.0" prefHeight="22.0" prefWidth="225.0" />
+                                    <TextField fx:id="code" accessibleRole="CHECK_BOX" layoutX="96.0" layoutY="26.0" prefHeight="22.0" prefWidth="225.0" />
                                     <Button layoutX="424.0" layoutY="26.0" mnemonicParsing="false" onAction="#onBtnClick" text="发送" />
                                     <TextArea fx:id="backMsg" layoutX="26.0" layoutY="63.0" prefHeight="217.0" prefWidth="526.0" />
                                  </children></AnchorPane>
@@ -46,7 +46,16 @@
                       </Tab>
                       <Tab text="Wifi设置">
                         <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="760.0" />
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="760.0">
+                                 <children>
+                                    <Label layoutX="26.0" layoutY="14.0" text="WiFi名称" />
+                                    <TextField fx:id="wifname" layoutX="99.0" layoutY="10.0" />
+                                    <Button layoutX="338.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnWifiName" text="设置WiFi名称" />
+                                    <Label layoutX="26.0" layoutY="58.0" text="WiFi密码" />
+                                    <TextField fx:id="wifpwd" layoutX="99.0" layoutY="54.0" />
+                                    <Button layoutX="338.0" layoutY="54.0" mnemonicParsing="false" onAction="#onBtnWifiPwd" text="设置WiFi密码" />
+                                    <TextArea fx:id="wifmsg" layoutX="29.0" layoutY="90.0" prefHeight="200.0" prefWidth="517.0" />
+                                 </children></AnchorPane>
                         </content>
                       </Tab>
                         <Tab text="ROLA参数设置">
